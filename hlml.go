@@ -644,6 +644,7 @@ func GetDeviceTypeName() (string, error) {
 			return fmt.Errorf("get device info: %w", err)
 		}
 
+		log.Println("DeviceName", deviceID)
 		deviceType, err = getDeviceName(deviceID)
 		if err != nil {
 			return fmt.Errorf("get device name: %w", err)
