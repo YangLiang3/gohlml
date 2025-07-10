@@ -119,6 +119,7 @@ func errorString(ret C.hlml_return_t) error {
 
 // Initialize initializes the HLML library
 func Initialize() error {
+	log.Println("Initiazed testing-----")
 	return errorString(C.hlml_init())
 }
 
